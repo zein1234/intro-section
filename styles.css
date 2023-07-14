@@ -17,3 +17,19 @@ img {
   max-width: 100%;
 }
 
+
+a {
+  text-decoration: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.navbar {
+  display: flex;
+  height: 5rem;
+  align-items: center;
+  padding: 0 1rem;
+  justify-content: space-between;
+}
