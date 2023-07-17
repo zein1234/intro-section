@@ -26,25 +26,9 @@ a {
   display: none;
 }
 
-.navbar {
-  display: flex;
-  height: 5rem;
-  align-items: center;
-  padding: 0 1rem;
-  justify-content: space-between;
-}
 
-.nav-right {
-  position: fixed;
-  top: 0;
-  right: -100%;
-  min-height: 100vh;
-  padding: 1.5rem;
-  width: 65%;
-  background-color: var(--almost-white);
-  z-index: 100;
-  transition: 0.5s;
-}
+
+
 
 .nav-right.show {
   right: 0;

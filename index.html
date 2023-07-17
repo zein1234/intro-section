@@ -5,13 +5,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
+  <link rel="stylesheet" href="./styles.css">
   <title>Intro section with dropdown navigation</title>
 
 
 </head>
 <body>
-  <div class="backdrop hidden"></div>
+  <nav>
+    <div class="nav-container">
+      <div class="nav-left">
+        <div class="nav-logo"><img src="./images/logo.svg" alt="logo"></div>
+        <ul class="nav-links">
+          <li>
+            Features
+            <img src="./images/icon-arrow-down.svg" alt="icon">
+            <div class="sub-menu one">
+              <p class="sub-link">
+                <img src="./images/icon-todo.svg" alt="icon">
+                Todo List
+              </p>
+              <p class="sub-link">
+                <img src="./images/icon-calendar.svg" alt="icon">
+                Calender
+              </p>
+              <p class="sub-link">
+                <img src="./images/icon-reminders.svg" alt="icon">
+                Reminders
+              </p>
+              <p class="sub-link">
+                <img src="./images/" alt="icon">
+                Planning
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- <div class="backdrop hidden"></div>
   <header class="navbar">
     <div class="logo">
       <svg width="84" height="27" xmlns="http://www.w3.org/2000/svg">
@@ -125,8 +156,8 @@
         </g>
       </svg>
     </a>
-  </header>
-  
+  </header> -->
+
   <section class="hero">
     <div class="hero-img-mobile">
       <img src="images/image-hero-mobile.png" alt="" />
