@@ -1,4 +1,4 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap");
 
 :root {
   --almost-white: hsl(0, 0%, 98%);
@@ -7,6 +7,8 @@
   --paragraph: 16px;
 }
 body {
+  min-height: 100vh;
+  width: 100%;
   font-size: var(--paragraph);
   font-weight: 500;
   color: var(--almost-black);
@@ -17,32 +19,105 @@ img {
   max-width: 100%;
 }
 
+/*
+BUTTONS */
+.outlined-btn, .transparent-btn {
+  border-radius: 15px;
+  color: var(--medium-gray);
+  cursor: pointer;
+  padding: 1rem 2rem;
+  background-color: transparent;
+}
+.transparent-btn{
+  border: none;
+}
+.transparent-btn:hover{
+color: var(--almost-black);
+font-weight: 700;
+}
+.outlined-btn{
+  border: 1px solid var(--almost-black);
 
-a {
-  text-decoration: none;
+}
+.outlined-btn:hover {
+  font-weight: 700;
+  color: var(--almost-black);
+
+}
+.primary-btn{
+  background-color: var(--almost-black);
+  border-radius: 10px;
+  width: fit-content;
+  color: var(--almost-white);
+  padding: 1rem 2 rem;
+  cursor: pointer;
+}
+.primary-btn:hover {
+  background-color: var(--almost-white);
+  font-weight: 700;
+  border: 1px solid var(--almost-black);
+  color: var(--almost-black);
 }
 
-.hidden {
+
+/* navbar style */
+nav{
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-inline: 3rem;
+}
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+.nav-links{
+  display: flex;
+  list-style: none;
+  margin-left: 4rem;
+  gap: 1.5rem;
+}
+.nav-links li{
+  cursor: pointer;
+  color: var(--medium-gray);
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  position: relative;
+  user-select: none;
+}
+
+.nav-links li:hover{
+  color: var(--almost-black);
+}
+
+.mobile-menu-btn{
+  display: none;
+}
+.mobile-menu{
   display: none;
 }
 
-
-
-
-
-.nav-right.show {
+.sub-menu{
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  background-color: var(--almost-white);
+  gap: 1rem;
+  box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.75)  ;
+  padding:1rem ;
+  border-radius: 10px;
+}
+.one{
+  bottom: -170px;
   right: 0;
 }
+.two{
+bottom: -136px;
 
-.close-btn {
-  display: flex;
-  justify-content: end;
-  cursor: pointer;
 }
 
-.nav-menu {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  margin: 2rem 0;
-} */
+/* main style */
