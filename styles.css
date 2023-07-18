@@ -119,5 +119,138 @@ nav{
 bottom: -136px;
 
 }
+.sub-menu .sub-link {
+  display: flex;
+  align-items: center;
+  width: 150px;
+  gap: .5rem;
+}
+
+.active .arrow{
+  transform: rotate(180deg);
+  transition: 0.2s;
+}
+
+.active-menu{
+  display: flex !important;
+}
 
 /* main style */
+main{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 80px);
+
+}
+.main-container {
+  max-width: 1100px;
+  display: flex;
+  gap: 5rem;
+  grid-template-columns: 1fr 1fr;
+}
+.main-left{
+  display: felx;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.main-heading{
+  font-size:4em;
+}
+
+.main-content{
+  font-size: 18px;
+  line-height: 1.8;
+  color: var(--medium-gray);
+}
+
+.logoes{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+@media screen and (max-width:800px){
+  .nav-content {
+    padding-inline: 1re,;
+  }
+  .mobile-menu{
+    display: flex;
+    cursor: pointer;
+    z-index: 999;
+  }
+  .mobile-menu{
+    display:none;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 70%;
+    background-color: var(--almost-white);
+    padding: 5rem 2 rem;
+  }
+  .mobile-links{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    list-style:none;
+  }
+  .mobile-links li {
+    display: flex;
+    columns: var(--medium-gray);
+    flex-direction: column;
+    cursor: pointer;
+  }
+  .mobile-links li p{
+    display: flex;
+    align-items: center;
+  }
+  .mobile-sub{
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1rem;
+
+  }
+  .overflow{
+    background-color: black;
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 30%;
+    opacity: .7;
+  }
+  .nav-links{
+    display: none;
+
+  }
+  .nav-right{
+    display: none;
+  }
+  main{
+    align-items: flex-start;
+  }
+  .main-container{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .main-left{
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+  }
+  .main-heading{
+    font-size: 2.2rem;
+  }
+  .main-heading br {
+    display: none;
+  }
+  .logoes{
+    width: 100%;
+    padding-inline: 1rem;
+    flex-wrap: wrap;
+  }
+}
